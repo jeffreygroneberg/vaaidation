@@ -35,8 +35,7 @@ public class SampleAPI {
         }
 
         // ... processing if validation passes
-        return new ResponseEntity<>(HttpStatus.OK);
-        
+        return new ResponseEntity<>(HttpStatus.OK);       
 
     }
 

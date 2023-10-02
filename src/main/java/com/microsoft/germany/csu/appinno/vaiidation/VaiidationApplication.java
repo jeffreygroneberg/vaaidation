@@ -18,15 +18,11 @@ public class VaiidationApplication {
 
 	@Bean
 	public OpenAIClient getOpenAIClient(@Value("${azure.openai.key}") String apiKey,
-			@Value("${azure.openai.endpoint}") String endpoint,
-			@Value("${azure.openai.deploymentmodelid}") String deploymentModelId) {
+			@Value("${azure.openai.endpoint}") String endpoint) {
 
 		// assert all parameters are not null or empty
 		assert apiKey != null && !apiKey.isEmpty();
 		assert endpoint != null && !endpoint.isEmpty();
-		assert deploymentModelId != null && !deploymentModelId.isEmpty();
-
-		System.out.println(endpoint);
 
 		OpenAIClient client = new OpenAIClientBuilder()
 				.credential(new AzureKeyCredential(apiKey))

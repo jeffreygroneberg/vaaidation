@@ -38,8 +38,6 @@ public class GPTValidation implements Validator {
     @Override
     public void validate(Object target, Errors errors) {
 
-        System.out.println("Deployment ID is" + deploymentModelId);
-
         List<ChatMessage> chatMessages = new ArrayList<>();
 
         GPTInput inputJSON = new GPTInput();
@@ -102,7 +100,7 @@ public class GPTValidation implements Validator {
             if (!result.getValid()) {
                 errors.rejectValue(result.getField(), result.getReason());
             }
-        }       
+        }
 
     }
 
