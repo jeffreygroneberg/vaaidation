@@ -1,0 +1,8 @@
+# Create http request for POST Method in hello world
+POST http://localhost:8080/sendCustomDTO
+Content-Type: application/json
+{  
+    "address": "68469 Weinheim, Obere Straße 5b",
+    "city": "Mannheim",
+    "nintendo": "The Legend of Zelda"
+}
