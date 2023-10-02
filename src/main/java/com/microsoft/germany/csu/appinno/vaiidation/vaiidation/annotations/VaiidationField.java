@@ -8,6 +8,5 @@ import java.lang.annotation.ElementType;
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.FIELD)
 public @interface VaiidationField {    
-    String validationPrompt() default "";
-    String errorMessage() default "";
+    String validationPrompt() default ""; 
 }

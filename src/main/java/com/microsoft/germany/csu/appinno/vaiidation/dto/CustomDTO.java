@@ -6,13 +6,13 @@ import com.microsoft.germany.csu.appinno.vaiidation.vaiidation.annotations.Vaiid
 @Vaiidation()
 public class CustomDTO {
 
-    @VaiidationField(validationPrompt = "Must be a valid address format", errorMessage = "Seems not to be an address")
+    @VaiidationField(validationPrompt = "Must be a valid address format")
     private String address;
 
-    @VaiidationField(validationPrompt = "Must be a city name", errorMessage = "Seems not to be a city")
+    @VaiidationField(validationPrompt = "Must be a city name")
     private String city;
 
-    @VaiidationField(validationPrompt = "Must be a game released on a Nintendo console, but does not need to be exclusive to a Nintendo console.", errorMessage = "Seems not to be a valid Nintendo game")
+    @VaiidationField(validationPrompt = "Must be a game released on a Nintendo console, but does not need to be exclusive to a Nintendo console.")
     private String nintendo;
 
     public String getAddress() {
